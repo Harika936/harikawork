@@ -51,20 +51,12 @@ export const About = () => {
             <div className="bg-gradient-to-br from-purple-100 to-orange-100 rounded-3xl p-8 shadow-2xl">
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white rounded-xl p-6 text-center shadow-lg">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">8.47</div>
-                  <div className="text-gray-600">Current CGPA</div>
-                </div>
-                <div className="bg-white rounded-xl p-6 text-center shadow-lg">
                   <div className="text-3xl font-bold text-orange-500 mb-2">5+</div>
                   <div className="text-gray-600">Technologies</div>
                 </div>
                 <div className="bg-white rounded-xl p-6 text-center shadow-lg">
                   <div className="text-3xl font-bold text-pink-500 mb-2">2+</div>
                   <div className="text-gray-600">Projects</div>
-                </div>
-                <div className="bg-white rounded-xl p-6 text-center shadow-lg">
-                  <div className="text-3xl font-bold text-blue-500 mb-2">1</div>
-                  <div className="text-gray-600">Internship</div>
                 </div>
               </div>
             </div>
