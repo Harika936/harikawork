@@ -105,33 +105,16 @@ export const Hero = () => {
             <div className="relative z-10 bg-gradient-to-br from-white/80 to-purple-50/80 rounded-3xl p-8 shadow-2xl backdrop-blur-sm border border-white/20">
               <div className="bg-white/90 rounded-2xl p-6 shadow-lg backdrop-blur-sm">
                 <div className="w-full h-80 bg-gradient-to-br from-purple-200 to-pink-200 rounded-xl flex items-center justify-center relative overflow-hidden">
-                  {/* Tech Pattern Background */}
-                  <div className="absolute inset-0 opacity-20">
-                    <div className="grid grid-cols-8 grid-rows-8 h-full w-full gap-1">
-                      {Array.from({ length: 64 }).map((_, i) => (
-                        <div
-                          key={i}
-                          className="bg-gradient-to-br from-purple-400 to-pink-400 rounded-sm animate-pulse"
-                          style={{
-                            animationDelay: `${i * 0.1}s`,
-                            animationDuration: `${2 + (i % 3)}s`
-                          }}
-                        ></div>
-                      ))}
-                    </div>
-                  </div>
+                  {/* Profile Picture */}
+                  <img 
+                    src="/lovable-uploads/44113c33-abd7-4d30-9717-3e170ee77311.png" 
+                    alt="Harika - Professional Photo"
+                    className="w-full h-full object-cover rounded-xl"
+                  />
                   
-                  <div className="text-center relative z-10">
-                    <div className="w-24 h-24 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg relative">
-                      <span className="text-white text-2xl font-bold">HS</span>
-                      <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full animate-ping opacity-20"></div>
-                    </div>
-                    <p className="text-gray-600 font-medium">Professional Photo</p>
-                    <div className="flex justify-center gap-2 mt-3">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full animate-bounce"></div>
-                      <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce delay-100"></div>
-                      <div className="w-2 h-2 bg-orange-400 rounded-full animate-bounce delay-200"></div>
-                    </div>
+                  {/* Overlay for better text visibility */}
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-4">
+                    <p className="text-white font-medium text-center">Professional Photo</p>
                   </div>
                 </div>
               </div>
